@@ -7,21 +7,8 @@ import sendData from "../../../../recoil/atoms/sendDatesValueAtom";
 import startDateValue from "../../../../recoil/atoms/StartDateAtom";
 import startMonthValue from "../../../../recoil/atoms/StartMonthAtom";
 import { BASE_API_LINK } from "../../../../utils/BaseAPILink";
-import CustomCalendar from "../Misc/CustomCalendar";
+// import CustomCalendar from "../Misc/CustomCalendar";
 import Filter from "../Misc/Filter";
-import AlertComments from "./AlertComments";
-import Clients from "./Clients";
-import Clinics from "./Clinics";
-import Comments from "./Comments";
-import HealthProfessionals from "./HealthProfessionals";
-import NPSCard from "./NPSCard";
-import NPSOverTime from "./NPSOverTime";
-import NPSvsSentiment from "./NPSVsSentiment";
-import NSSCard from "./NSSCard";
-import NSSOverTime from "./NSSOverTime";
-import TotalCard from "./TotalCard";
-import WordFrequency from "./WordFrequency";
-
 import npsAPIdata from "../../../../recoil/atoms/npsAPIdata";
 import nssAPIdata from "../../../../recoil/atoms/nssAPIdata";
 import apiNameVar from "../../../../recoil/atoms/apiNameVar";
@@ -48,7 +35,7 @@ const NPSDashboard = () => {
   const [finalEndDate, setFinalEndDate] = useRecoilState(endDateValue);
   const [finalEndMonth, setFinalEndMonth] = useRecoilState(endMonthValue);
   const [sendDataStatus, setSendDataStatus] = useRecoilState(sendData);
-  const [apiNameVars, setApiNameVars] = useRecoilState(apiNameVar);
+  // const [apiNameVars, setApiNameVars] = useRecoilState(apiNameVar);
   const defaultStartYear = 2021;
   const defaultStartMonth = 1;
   const defaultEndYear = 2021;
@@ -98,16 +85,7 @@ const NPSDashboard = () => {
     // "egPercentileMember"]
   ];
 
-  // const largeDateString =
-  //   finalStartDate.toString() +
-  //   finalStartMonth.toString() +
-  //   finalEndDate.toString() +
-  //   finalEndMonth.toString();
-
   useEffect(async () => {
-    // console.log(largeDate);
-    // console.log("end month");
-    // console.log(finalEndMonth);
     // API url creation
     for (let i = 0; i < 10; i++) {
       const requestURL =
@@ -189,7 +167,6 @@ const NPSDashboard = () => {
       setTimeout(() => setAlertCommentsAPIData(alerts?.data), 500);
 
       const allComments = await axios.get(linksArray[9]);
-
       setTimeout(() => setAllCommentsAPIData(allComments?.data), 500);
     }
 
@@ -244,10 +221,6 @@ const NPSDashboard = () => {
       {activePageValue === "NPS_Analysis" ? <NPSAnalysisPage /> : ""}
       {activePageValue === "NSS_Analysis" ? <NSSAnalysisPage /> : ""}
       {activePageValue === "Comments" ? <CommentsPage /> : ""}
-      {/*  */}
-      {/* <NPSAnalysisPage /> */}
-      {/* <NSSAnalysisPage /> */}
-      {/* <CommentsPage /> */}
     </div>
   );
 };

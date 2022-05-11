@@ -79,39 +79,6 @@ const UploadWrapper = () => {
 
   return (
     <div>
-      <div>
-        <div className="w-[100%] px-5 p-3 py-5  rounded-lg bg-white mb-5">
-          <h1 className=" text-left font-bold  text-lg mb-5  opacity-80 text-[#000C08]">
-            Upload File
-          </h1>
-          <form>
-            <div className="border-[2px] border-dashed border-[#00ac69]  rounded-2xl  w-full flex justify-center items-center h-[250px] relative">
-              {loaderStatus ? (
-                <div className="h-full w-full bg-[#ffffff] z-[200] rounded-lg flex justify-center items-center">
-                  <PuffLoader color="#00ac69" size={50} width={100} />
-                </div>
-              ) : (
-                <div>
-                  <input
-                    type="file"
-                    name="file"
-                    onChange={changeHandler}
-                    accept={".csv"}
-                    className="absolute top-0 bottom-0 left-0 right-0 w-full opacity-0"
-                  />
-                  <img
-                    src={uploadIcon}
-                    alt="upload"
-                    className="w-[80px] mx-auto text-center"
-                  />
-                  <p className="opacity-40">Click to upload your files here </p>
-                </div>
-              )}
-            </div>
-          </form>
-        </div>
-      </div>
-
       {graphData && (
         <div>
           {/* Total cards */}
@@ -232,6 +199,39 @@ const UploadWrapper = () => {
           </div>
         </div>
       )}
+
+      <div>
+        <div className="w-[100%] px-5 p-3 py-5  rounded-lg bg-white mb-5">
+          <h1 className=" text-left font-bold  text-lg mb-5  opacity-80 text-[#000C08]">
+            Upload File
+          </h1>
+          <form>
+            <div className="border-[2px] border-dashed border-[#00ac69]  rounded-2xl  w-full flex justify-center items-center h-[250px] relative">
+              {loaderStatus ? (
+                <div className="h-full w-full bg-[#ffffff] z-[200] rounded-lg flex justify-center items-center">
+                  <PuffLoader color="#00ac69" size={50} width={100} />
+                </div>
+              ) : (
+                <div>
+                  <input
+                    type="file"
+                    name="file"
+                    onChange={changeHandler}
+                    accept={".csv"}
+                    className="absolute top-0 bottom-0 left-0 right-0 w-full opacity-0"
+                  />
+                  <img
+                    src={uploadIcon}
+                    alt="upload"
+                    className="w-[80px] mx-auto text-center"
+                  />
+                  <p className="opacity-40">Click to upload your files here </p>
+                </div>
+              )}
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 };

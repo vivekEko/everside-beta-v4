@@ -192,7 +192,7 @@ const NPSAllGraph = () => {
 
           {/* Graph */}
           <div className="relative ">
-            <ResponsiveContainer width="100%" height={180}>
+            <ResponsiveContainer width="100%" height={300}>
               <AreaChart
                 key={graphName}
                 data={apiData?.nss_over_time}

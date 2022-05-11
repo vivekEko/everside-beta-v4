@@ -15,6 +15,8 @@ const NPSDetailCard = () => {
 
   useEffect(() => {
     setApiData(nssApiData);
+    console.log("nss data from api:");
+    console.log(nssApiData);
   }, [nssApiData]);
 
   return (
@@ -41,7 +43,7 @@ const NPSDetailCard = () => {
                   </div>
 
                   <div className="mx-2 opacity-80 font-bold">
-                    {apiData?.nss.positive}
+                    {apiData?.nss.total_positive}
                   </div>
                   <img src={RespondantsIcon} alt="number of promoters" />
                 </div>
@@ -52,7 +54,7 @@ const NPSDetailCard = () => {
                       className={` ml-auto rounded-full bg-[#00AC69] transition-all ease-in duration-500`}
                       style={{
                         width: apiData?.nss?.positive + "%",
-                        minWidth: "11%",
+                        minWidth: "15%",
                       }}
                     >
                       <div className="font-semibold  text-white ml-2">
@@ -71,7 +73,7 @@ const NPSDetailCard = () => {
                   </div>
 
                   <div className="mx-2 opacity-80 font-bold">
-                    {apiData?.nss.negative}
+                    {apiData?.nss.total_negative}
                   </div>
                   <img src={RespondantsIcon} alt="number of promoters" />
                 </div>
@@ -82,7 +84,7 @@ const NPSDetailCard = () => {
                       className={`  ml-auto rounded-full bg-[#f6da09] transition-all ease-in duration-500`}
                       style={{
                         width: apiData?.nss?.negative + "%",
-                        minWidth: "11%",
+                        minWidth: "15%",
                       }}
                     >
                       <div className="font-semibold  text-white ml-2">
@@ -101,7 +103,7 @@ const NPSDetailCard = () => {
                   </div>
 
                   <div className="mx-2 opacity-80 font-bold">
-                    {apiData?.nss.extreme}
+                    {apiData?.nss.total_extreme}
                   </div>
                   <img src={RespondantsIcon} alt="number of promoters" />
                 </div>
@@ -112,7 +114,7 @@ const NPSDetailCard = () => {
                       className={` ml-auto rounded-full bg-[#DB2B39] transition-all ease-in duration-500`}
                       style={{
                         width: apiData?.nss?.negative + "%",
-                        minWidth: "11%",
+                        minWidth: "15%",
                       }}
                     >
                       <div className="font-semibold  text-white ml-2">

@@ -122,7 +122,7 @@ function CustomTooltip({ active, payload, label }) {
         {payload?.map((data) => (
           <div
             key={Math.random()}
-            className="flex justify-between items-center "
+            className="flex justify-between items-center"
           >
             {/* <div
                   className={`bg-[${data.stroke}] w-2 h-2 rounded-full mr-2`}
