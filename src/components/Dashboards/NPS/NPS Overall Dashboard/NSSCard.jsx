@@ -27,7 +27,7 @@ const NSSCard = () => {
 
       {apiData && (
         <div>
-          <h1 className=" font-bold opacity-80">Net Sentiment Score</h1>
+          <h1 className=" font-bold opacity-80">Sentiments</h1>
           <div className="flex justify-start gap-3 md:gap-5 sm:justify-between ">
             <div className="flex justify-start items-center gap-3 md:gap-5">
               <div className="text-center flex flex-col justify-center items-center gap-2">

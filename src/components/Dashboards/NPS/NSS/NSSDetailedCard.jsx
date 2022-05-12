@@ -29,9 +29,7 @@ const NPSDetailCard = () => {
 
       {apiData && (
         <div className="w-full ">
-          <h1 className=" font-bold opacity-80 text-[18px] mb-7">
-            Net Sentiment Score
-          </h1>
+          <h1 className=" font-bold opacity-80 text-[18px] mb-7">Sentiments</h1>
 
           <div className="flex gap-5 items-center flex-col-reverse sm:flex-row">
             <div className="w-[80%] sm:w-[60%]">

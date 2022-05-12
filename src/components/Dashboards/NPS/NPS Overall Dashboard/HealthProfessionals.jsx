@@ -7,7 +7,7 @@ const HealthProfessionals = () => {
   return (
     <div className="p-5 rounded-lg bg-white transition-all w-[100%]  h-[300px]">
       <h1 className="  font-bold  opacity-80">
-        Health Professionals
+        Providers
         <span className="text-[12px] opacity-70 ml-5">(ILLUSTRATIVE)</span>
       </h1>
       <div className="text-xs text-gray-400 border-b-2 border-b-gray-100 flex justify-end px-2 pb-2">

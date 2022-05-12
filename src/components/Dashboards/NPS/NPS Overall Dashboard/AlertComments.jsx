@@ -101,7 +101,7 @@ const AlertComments = () => {
   }, [alertCommentsAPIData]);
 
   return (
-    <div className=" w-[100%] md:w-[40%] p-2 h-[300px] rounded-lg bg-white  ">
+    <div className=" w-[100%] md:w-[40%] p-2 h-[400px] rounded-lg bg-white  ">
       {!apiData && (
         <div className="h-full w-full bg-[#ffffff] z-[200] rounded-lg flex justify-center items-center">
           <PuffLoader color="#00ac69" size={50} width={100} />
@@ -135,7 +135,7 @@ const AlertComments = () => {
               />
             </div>
           </div>
-          <div className=" h-[240px] overflow-y-scroll scrollbar-hide ">
+          <div className=" h-[340px] overflow-y-scroll scrollbar-hide ">
             <table className=" text-[12px] p-3 pb-0 w-full ">
               {apiData?.data
                 ?.filter((filtered_value) => {

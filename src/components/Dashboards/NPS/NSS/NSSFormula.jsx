@@ -8,7 +8,7 @@ const NSSFormula = () => {
     <div className="p-2 md:p-5 w-full lg:min-h-[285px] rounded-lg bg-white   ">
       <div className="w-full h-[100%]">
         <h1 className=" font-bold opacity-80 text-[18px] mb-10 lg:mb-[70px]">
-          What is NSS ?
+          Sentiments
         </h1>
         <div className="flex justify-center items-center  mx-auto  gap-2 h-full pb-10">
           <div className="flex justify-between items-center w-full">
@@ -53,9 +53,8 @@ const NSSFormula = () => {
             {/* <div className="border-r-black rounded-full h-[70px] w-[20px] border-r-[5px] opacity-70"></div> */}
             <div className="text-5xl">)</div>
 
-            <div className="text-5xl">
-              {/* <div className="bg-black rounded-lg h-[5px] w-[20px] opacity-70"></div>
-              <div className="bg-black rounded-lg h-[5px] w-[20px] mt-1 opacity-70"></div> */}
+            {/* <div className="text-5xl">
+            
               =
             </div>
 
@@ -63,7 +62,7 @@ const NSSFormula = () => {
               <h1 className="text-xl sm:text-3xl opacity-70 font-semibold">
                 NSS %
               </h1>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

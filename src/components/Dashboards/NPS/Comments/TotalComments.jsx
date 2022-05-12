@@ -93,8 +93,11 @@ const TotalComments = () => {
                       S.No
                     </div>
                   </th>
-                  <th className=" text-gray-400 w-[50%] capitalize text-left font-normal">
+                  <th className=" text-gray-400 w-[40%] capitalize text-left font-normal">
                     Comments
+                  </th>
+                  <th className=" text-gray-400 w-[10%] capitalize  font-normal ">
+                    Date
                   </th>
                   <th className=" text-gray-400 w-[15%]  capitalize font-normal">
                     Reason
@@ -128,7 +131,7 @@ const TotalComments = () => {
                         <td className=" text-gray-400 w-[5%]  min-w-[30px] text-[14px]">
                           {index + 1}
                         </td>
-                        <td className=" w-[50%] ">
+                        <td className=" w-[40%] ">
                           <div
                             className="max-w-[100%] text-[#000c08b3] font-semibold"
                             onClick={() => {
@@ -140,6 +143,9 @@ const TotalComments = () => {
                               ? data.review
                               : truncate(data.review, 100)}
                           </div>
+                        </td>
+                        <td className=" text-gray-400 w-[10%] text-center  font-semibold  text-[10px] ">
+                          May , 2020
                         </td>
 
                         <td className=" text-gray-400 w-[15%] text-center font-semibold  text-[10px]">

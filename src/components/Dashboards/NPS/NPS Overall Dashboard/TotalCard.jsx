@@ -127,8 +127,8 @@ const TotalCard = () => {
 
           <div className="p-2 xs:p-5 md:p-2 bg-white text-gray-600 rounded-md min-h-[50px] w-[70px]  md:min-w-[100px] text-center flex justify-center items-center">
             <div>
-              <p className=" text-[#000C08] opacity-40 text-[10px] md:text-[14px]">
-                Clinic
+              <p className=" text-[#000C08] opacity-40 text-[10px] md:text-[12px]">
+                Health Centers
               </p>
               <p className="text-sm sm:text-base md:text-xl font-semibold mt-2 text-[#000C08] opacity-80">
                 <CountUp
@@ -144,7 +144,7 @@ const TotalCard = () => {
           <div className="p-2 xs:p-5 md:p-2 bg-white text-gray-600 rounded-md min-h-[50px] w-[70px]  md:min-w-[100px] text-center flex justify-center items-center">
             <div>
               <p className=" text-[#000C08] opacity-40 text-[10px] md:text-[14px]">
-                Physicians
+                Providers
               </p>
               <p className="text-sm sm:text-base md:text-xl font-semibold mt-2 text-[#000C08] opacity-80">
                 <CountUp

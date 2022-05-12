@@ -93,7 +93,7 @@ const NSSOverTime = () => {
             </div>
             <div className="flex justify-end items-center gap-[4px] ">
               <div className="bg-[#0094E0] h-[10px] w-[10px] rounded-full"></div>
-              <p>Net Sentiment Score</p>
+              <p>Sentiments</p>
             </div>
           </div>
 

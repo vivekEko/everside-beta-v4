@@ -87,7 +87,7 @@ const Clinics = () => {
 
       {apiData && (
         <div className="max-h-[300px] ">
-          <h1 className="  font-bold  opacity-80">Clinics</h1>
+          <h1 className="  font-bold  opacity-80">Health Centers</h1>
           <div className=" text-xs text-gray-400 border-b-2 border-b-gray-100 flex justify-end px-2 pb-2">
             <span className="invisible">Rank</span>
           </div>

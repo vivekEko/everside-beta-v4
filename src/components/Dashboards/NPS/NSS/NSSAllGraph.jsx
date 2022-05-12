@@ -117,7 +117,9 @@ const NPSAllGraph = () => {
       {apiData && (
         <div className="w-full ">
           <div className="flex justify-between items-center mb-7">
-            <h1 className=" font-bold opacity-80 text-[18px] ">NSS Plot</h1>
+            <h1 className=" font-bold opacity-80 text-[18px] ">
+              Sentiment Plot
+            </h1>
             <div className="relative">
               {/* Dropdown */}
               <div

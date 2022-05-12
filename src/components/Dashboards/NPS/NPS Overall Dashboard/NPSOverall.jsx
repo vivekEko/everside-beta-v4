@@ -22,6 +22,10 @@ const NPSOverall = () => {
         </div>
         <TotalCard />
       </section>
+      <section className="my-[30px]  flex flex-col md:flex-row justify-center gap-[18px]">
+        <Comments />
+        <AlertComments />
+      </section>
       <section className="my-[30px]  flex flex-col xl:flex-row justify-center gap-[18px]">
         <NPSOverTime />
         <NSSOverTime />
@@ -32,11 +36,6 @@ const NPSOverall = () => {
         <HealthProfessionals />
         <Clinics />
         <Clients />
-      </section>
-
-      <section className="my-[30px]  flex flex-col md:flex-row justify-center gap-[18px]">
-        <Comments />
-        <AlertComments />
       </section>
     </div>
   );

@@ -98,7 +98,7 @@ const Comments = () => {
   // console.log("This is API Data: " + apiData);
 
   return (
-    <div className="w-[100%] p-2 h-[300px] rounded-lg bg-white">
+    <div className="w-[100%] p-2 h-[400px] rounded-lg bg-white">
       {!apiData && (
         <div className="h-full w-full bg-[#ffffff] z-[200] rounded-lg flex justify-center items-center">
           <PuffLoader color="#00ac69" size={50} width={100} />
@@ -135,7 +135,7 @@ const Comments = () => {
               />
             </div>
           </div>
-          <div className=" h-[250px] overflow-y-scroll overflow-x-scroll scrollbar-hide ">
+          <div className=" h-[350px] overflow-y-scroll overflow-x-scroll scrollbar-hide ">
             <table className="border-b-gray-100 border-b-2 text-[12px] p-3 pb-0 w-full min-w-[400px] ">
               <thead className="border-b-gray-100 border-b-2 sticky bg-white top-0">
                 <tr className=" flex justify-between items-center gap-3 text-center px-2 text-[10px] text-gray-500 uppercase p-2 font-normal">
@@ -144,8 +144,12 @@ const Comments = () => {
                       S.No
                     </div>
                   </th>
-                  <th className=" text-gray-400 w-[50%] capitalize text-left font-normal">
+
+                  <th className=" text-gray-400 w-[40%] capitalize text-left font-normal">
                     Comments
+                  </th>
+                  <th className=" text-gray-400 w-[10%] capitalize  font-normal ">
+                    Date
                   </th>
                   <th className=" text-gray-400 w-[15%]  capitalize font-normal">
                     Reason
@@ -177,9 +181,10 @@ const Comments = () => {
                     <tbody key={data.id} className="w-full ">
                       <tr className=" py-2 px-2 flex justify-around items-center gap-3 border-b-2 border-b-gray-100 w-full">
                         <td className=" text-gray-400 w-[5%]  min-w-[30px] text-[14px]">
-                          {index + 1}
+                          {index + 1}{" "}
                         </td>
-                        <td className=" w-[50%] ">
+
+                        <td className=" w-[40%] ">
                           <div
                             className="max-w-[100%] text-[#000c08b3] font-semibold"
                             onClick={() => {
@@ -192,38 +197,35 @@ const Comments = () => {
                               : truncate(data.review, 100)}
                           </div>
                         </td>
-
+                        <td className=" text-gray-400 w-[10%] text-center  font-semibold  text-[10px] ">
+                          May , 2020
+                        </td>
                         <td className=" text-gray-400 w-[15%] text-center font-semibold  text-[10px]">
                           Annual Checkup
                         </td>
                         <td className=" text-gray-400 w-[15%]  text-center font-semibold text-[10px]">
                           Office
                         </td>
-
                         {data.label == "Positive" && (
                           <td className=" bg-[#00AC69] bg-opacity-[16%] text-[#00AC69] font-medium py-2 w-[15%]  rounded-full  min-w-[60px] text-center">
                             {data.label}
                           </td>
                         )}
-
                         {data.label == "Negative" && (
                           <td className=" bg-[#D8BF05] bg-opacity-[16%] text-[#c7b005] py-2 w-[15%]  font-medium rounded-full  min-w-[60px] text-center">
                             {data.label}
                           </td>
                         )}
-
                         {data.label == "Neutral" && (
                           <td className=" bg-gray-100 py-2 w-[15%]  text-gray-700 rounded-full  min-w-[60px] font-medium text-center">
                             {data.label}
                           </td>
                         )}
-
                         {data.label == "Extreme" && (
                           <td className=" bg-red-100 py-2 w-[15%] text-center  text-red-700 rounded-full  min-w-[60px] ">
                             {data.label}
                           </td>
                         )}
-
                         {/* <td className=" bg-green-100 p-2 text-green-700 rounded-md">
                     {data.label}
                   </td> */}
